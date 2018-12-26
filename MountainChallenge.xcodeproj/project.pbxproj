@@ -15,6 +15,12 @@
 		C4356A0721D3FCBB00A5CA8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4356A0521D3FCBB00A5CA8F /* LaunchScreen.storyboard */; };
 		C4356A1221D3FCBB00A5CA8F /* MountainChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4356A1121D3FCBB00A5CA8F /* MountainChallengeTests.swift */; };
 		C4356A1D21D3FCBB00A5CA8F /* MountainChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4356A1C21D3FCBB00A5CA8F /* MountainChallengeUITests.swift */; };
+		C4AD289921D4052A001A4455 /* MountainDetailInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD289821D4052A001A4455 /* MountainDetailInterface.swift */; };
+		C4AD289B21D40794001A4455 /* MountainListInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD289A21D40794001A4455 /* MountainListInterface.swift */; };
+		C4AD289E21D40862001A4455 /* Mountain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD289D21D40862001A4455 /* Mountain.swift */; };
+		C4AD28A121D40B46001A4455 /* MountainProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD28A021D40B46001A4455 /* MountainProviderProtocol.swift */; };
+		C4AD28A321D40C69001A4455 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD28A221D40C69001A4455 /* Error.swift */; };
+		C4AD28A621D40E97001A4455 /* mountains.json in Resources */ = {isa = PBXBuildFile; fileRef = C4AD28A521D40E97001A4455 /* mountains.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +56,12 @@
 		C4356A1821D3FCBB00A5CA8F /* MountainChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MountainChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4356A1C21D3FCBB00A5CA8F /* MountainChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainChallengeUITests.swift; sourceTree = "<group>"; };
 		C4356A1E21D3FCBB00A5CA8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4AD289821D4052A001A4455 /* MountainDetailInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainDetailInterface.swift; sourceTree = "<group>"; };
+		C4AD289A21D40794001A4455 /* MountainListInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainListInterface.swift; sourceTree = "<group>"; };
+		C4AD289D21D40862001A4455 /* Mountain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mountain.swift; sourceTree = "<group>"; };
+		C4AD28A021D40B46001A4455 /* MountainProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainProviderProtocol.swift; sourceTree = "<group>"; };
+		C4AD28A221D40C69001A4455 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		C4AD28A521D40E97001A4455 /* mountains.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mountains.json; sourceTree = "<group>"; };
 		ECEB0CEC1F9BAC908524C3C8 /* Pods-MountainChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MountainChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-MountainChallenge/Pods-MountainChallenge.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,11 +133,13 @@
 		C43569FB21D3FCB900A5CA8F /* MountainChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				C4AD289321D402BA001A4455 /* Domain */,
+				C4AD289C21D40816001A4455 /* Model */,
+				C4AD289521D4047E001A4455 /* Modules */,
+				C4AD289F21D40AF3001A4455 /* Provider */,
+				C4AD289221D402AC001A4455 /* Resources */,
 				C43569FC21D3FCB900A5CA8F /* AppDelegate.swift */,
 				C43569FE21D3FCB900A5CA8F /* ViewController.swift */,
-				C4356A0021D3FCB900A5CA8F /* Main.storyboard */,
-				C4356A0321D3FCBB00A5CA8F /* Assets.xcassets */,
-				C4356A0521D3FCBB00A5CA8F /* LaunchScreen.storyboard */,
 				C4356A0821D3FCBB00A5CA8F /* Info.plist */,
 			);
 			path = MountainChallenge;
@@ -147,6 +161,82 @@
 				C4356A1E21D3FCBB00A5CA8F /* Info.plist */,
 			);
 			path = MountainChallengeUITests;
+			sourceTree = "<group>";
+		};
+		C4AD289221D402AC001A4455 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C4356A0321D3FCBB00A5CA8F /* Assets.xcassets */,
+				C4AD28A421D40E5E001A4455 /* Json */,
+				C4AD289421D402D1001A4455 /* Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C4AD289321D402BA001A4455 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		C4AD289421D402D1001A4455 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C4356A0021D3FCB900A5CA8F /* Main.storyboard */,
+				C4356A0521D3FCBB00A5CA8F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C4AD289521D4047E001A4455 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C4AD289721D404FA001A4455 /* MountainDetail */,
+				C4AD289621D404DA001A4455 /* MountainList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		C4AD289621D404DA001A4455 /* MountainList */ = {
+			isa = PBXGroup;
+			children = (
+				C4AD289A21D40794001A4455 /* MountainListInterface.swift */,
+			);
+			path = MountainList;
+			sourceTree = "<group>";
+		};
+		C4AD289721D404FA001A4455 /* MountainDetail */ = {
+			isa = PBXGroup;
+			children = (
+				C4AD289821D4052A001A4455 /* MountainDetailInterface.swift */,
+			);
+			path = MountainDetail;
+			sourceTree = "<group>";
+		};
+		C4AD289C21D40816001A4455 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C4AD289D21D40862001A4455 /* Mountain.swift */,
+				C4AD28A221D40C69001A4455 /* Error.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C4AD289F21D40AF3001A4455 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				C4AD28A021D40B46001A4455 /* MountainProviderProtocol.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		C4AD28A421D40E5E001A4455 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				C4AD28A521D40E97001A4455 /* mountains.json */,
+			);
+			path = Json;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +345,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4AD28A621D40E97001A4455 /* mountains.json in Resources */,
 				C4356A0721D3FCBB00A5CA8F /* LaunchScreen.storyboard in Resources */,
 				C4356A0421D3FCBB00A5CA8F /* Assets.xcassets in Resources */,
 				C4356A0221D3FCB900A5CA8F /* Main.storyboard in Resources */,
@@ -310,12 +401,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MountainChallenge/Pods-MountainChallenge-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -329,7 +422,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4AD289921D4052A001A4455 /* MountainDetailInterface.swift in Sources */,
+				C4AD28A121D40B46001A4455 /* MountainProviderProtocol.swift in Sources */,
 				C43569FF21D3FCB900A5CA8F /* ViewController.swift in Sources */,
+				C4AD289E21D40862001A4455 /* Mountain.swift in Sources */,
+				C4AD289B21D40794001A4455 /* MountainListInterface.swift in Sources */,
+				C4AD28A321D40C69001A4455 /* Error.swift in Sources */,
 				C43569FD21D3FCB900A5CA8F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,6 +606,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MountainChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -526,6 +625,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MountainChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
