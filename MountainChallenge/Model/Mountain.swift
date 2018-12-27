@@ -9,6 +9,7 @@
 import Foundation
 
 struct Mountain: Decodable {
+    // MARK: - Fields
     var id: Int
     var areaId: Int
     var name: String
@@ -20,6 +21,7 @@ struct Mountain: Decodable {
     var thumbnailUrl: String
     var imageUrl: String
     
+    // MARK: - Enums
     private enum CodingKeys: String, CodingKey {
         case id
         case areaId = "area_id"

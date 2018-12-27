@@ -15,14 +15,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let provider: MountainProviderProtocol = MountainProvider.getMountains
-        provider.getMountains()
+        let repository: MountainRepository = YamapProvider.mountainDataSource
+        repository.getMountains()
             .observeOn(MainScheduler.instance)
             .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .background))
             .subscribe(onSuccess: { mountains in
-                let a = mountains
             }, onError: { error in
-                
         })
     }
 }

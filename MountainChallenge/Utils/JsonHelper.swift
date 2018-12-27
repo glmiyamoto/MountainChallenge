@@ -7,18 +7,15 @@
 //
 
 import Foundation
-import RxSwift
 
 final class JsonHelper {
+    // MARK: - Constants
     static let JsonFileExtension = "json"
     
-    enum JsonProviderError: Swift.Error {
-        case jsonFileNotFound
-        case jsonParseFailed(String)
-    }
-    
+    // MARK: - Constructors
     private init() {}
     
+    // MARK: - Class methods
     static func decodeJsonFile<T>(_ fileName: String, type: T.Type) throws -> T where T : Decodable {
         if let url = Bundle.main.url(forResource: fileName, withExtension: JsonHelper.JsonFileExtension) {
             do {
@@ -26,22 +23,10 @@ final class JsonHelper {
                 let decoder = JSONDecoder()
                 return try decoder.decode(type, from: data)
             } catch {
-                throw JsonProviderError.jsonParseFailed("\(error)")
+                throw JsonDecodeError.jsonParseFailed("\(error)")
             }
         }
         
-        throw JsonProviderError.jsonFileNotFound
-    }
-    
-    static func decodeJsonFileAsObservable<T>(_ fileName: String, type: T.Type) -> Single<T> where T : Decodable {
-        return Single.create { single in
-            do {
-                let decodedObject = try decodeJsonFile(fileName, type: type)
-                single(.success(decodedObject))
-            } catch {
-                single(.error(error))
-            }
-            return Disposables.create()
-        }
+        throw JsonDecodeError.jsonFileNotFound
     }
 }

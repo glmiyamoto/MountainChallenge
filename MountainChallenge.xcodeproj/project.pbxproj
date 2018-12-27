@@ -16,17 +16,18 @@
 		C4356A0721D3FCBB00A5CA8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4356A0521D3FCBB00A5CA8F /* LaunchScreen.storyboard */; };
 		C4356A1221D3FCBB00A5CA8F /* MountainChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4356A1121D3FCBB00A5CA8F /* MountainChallengeTests.swift */; };
 		C4356A1D21D3FCBB00A5CA8F /* MountainChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4356A1C21D3FCBB00A5CA8F /* MountainChallengeUITests.swift */; };
-		C4A842D721D4525B000C23E4 /* MountainProviderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A842D621D4525B000C23E4 /* MountainProviderTest.swift */; };
+		C4A842D721D4525B000C23E4 /* MountainRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A842D621D4525B000C23E4 /* MountainRepositoryTest.swift */; };
 		C4AD289921D4052A001A4455 /* MountainDetailInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD289821D4052A001A4455 /* MountainDetailInterface.swift */; };
 		C4AD289B21D40794001A4455 /* MountainListInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD289A21D40794001A4455 /* MountainListInterface.swift */; };
 		C4AD289E21D40862001A4455 /* Mountain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD289D21D40862001A4455 /* Mountain.swift */; };
-		C4AD28A121D40B46001A4455 /* MountainProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD28A021D40B46001A4455 /* MountainProviderProtocol.swift */; };
-		C4AD28A321D40C69001A4455 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD28A221D40C69001A4455 /* Error.swift */; };
+		C4AD28A121D40B46001A4455 /* MountainRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD28A021D40B46001A4455 /* MountainRepository.swift */; };
 		C4AD28A621D40E97001A4455 /* mountains.json in Resources */ = {isa = PBXBuildFile; fileRef = C4AD28A521D40E97001A4455 /* mountains.json */; };
-		C4AD28A821D41549001A4455 /* MountainProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD28A721D41549001A4455 /* MountainProvider.swift */; };
+		C4AD28A821D41549001A4455 /* YamapProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD28A721D41549001A4455 /* YamapProvider.swift */; };
 		C4AD28A921D43A1A001A4455 /* mountains.json in Resources */ = {isa = PBXBuildFile; fileRef = C4AD28A521D40E97001A4455 /* mountains.json */; };
 		C4AD28AA21D43A1F001A4455 /* mountains.json in Resources */ = {isa = PBXBuildFile; fileRef = C4AD28A521D40E97001A4455 /* mountains.json */; };
 		C4AD28AE21D43D47001A4455 /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD28AD21D43D47001A4455 /* JsonHelper.swift */; };
+		C4B58CB621D4FE6E00139903 /* JsonDecodeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B58CB521D4FE6E00139903 /* JsonDecodeError.swift */; };
+		C4B58CB821D5015C00139903 /* ResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B58CB721D5015C00139903 /* ResponseError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,15 +65,16 @@
 		C4356A1821D3FCBB00A5CA8F /* MountainChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MountainChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4356A1C21D3FCBB00A5CA8F /* MountainChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainChallengeUITests.swift; sourceTree = "<group>"; };
 		C4356A1E21D3FCBB00A5CA8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C4A842D621D4525B000C23E4 /* MountainProviderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainProviderTest.swift; sourceTree = "<group>"; };
+		C4A842D621D4525B000C23E4 /* MountainRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainRepositoryTest.swift; sourceTree = "<group>"; };
 		C4AD289821D4052A001A4455 /* MountainDetailInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainDetailInterface.swift; sourceTree = "<group>"; };
 		C4AD289A21D40794001A4455 /* MountainListInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainListInterface.swift; sourceTree = "<group>"; };
 		C4AD289D21D40862001A4455 /* Mountain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mountain.swift; sourceTree = "<group>"; };
-		C4AD28A021D40B46001A4455 /* MountainProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainProviderProtocol.swift; sourceTree = "<group>"; };
-		C4AD28A221D40C69001A4455 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		C4AD28A021D40B46001A4455 /* MountainRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainRepository.swift; sourceTree = "<group>"; };
 		C4AD28A521D40E97001A4455 /* mountains.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mountains.json; sourceTree = "<group>"; };
-		C4AD28A721D41549001A4455 /* MountainProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainProvider.swift; sourceTree = "<group>"; };
+		C4AD28A721D41549001A4455 /* YamapProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YamapProvider.swift; sourceTree = "<group>"; };
 		C4AD28AD21D43D47001A4455 /* JsonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonHelper.swift; sourceTree = "<group>"; };
+		C4B58CB521D4FE6E00139903 /* JsonDecodeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecodeError.swift; sourceTree = "<group>"; };
+		C4B58CB721D5015C00139903 /* ResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseError.swift; sourceTree = "<group>"; };
 		EC208CEB6AC7C57E4D36655D /* Pods-MountainChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MountainChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MountainChallengeTests/Pods-MountainChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FA35A844FCB432C20712CC8E /* Pods_MountainChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MountainChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -138,10 +140,11 @@
 		C43569FB21D3FCB900A5CA8F /* MountainChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				C4B58CB321D4FC3900139903 /* Common */,
+				C4AD289F21D40AF3001A4455 /* Data */,
 				C4AD289321D402BA001A4455 /* Domain */,
 				C4AD289C21D40816001A4455 /* Model */,
 				C4AD289521D4047E001A4455 /* Modules */,
-				C4AD289F21D40AF3001A4455 /* Provider */,
 				C4AD289221D402AC001A4455 /* Resources */,
 				C4AD28B121D442FA001A4455 /* Utils */,
 				C43569FC21D3FCB900A5CA8F /* AppDelegate.swift */,
@@ -154,7 +157,7 @@
 		C4356A1021D3FCBB00A5CA8F /* MountainChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				C4A842D521D45240000C23E4 /* Provider */,
+				C4A842D521D45240000C23E4 /* Data */,
 				C4356A1121D3FCBB00A5CA8F /* MountainChallengeTests.swift */,
 				C4356A1321D3FCBB00A5CA8F /* Info.plist */,
 			);
@@ -170,12 +173,28 @@
 			path = MountainChallengeUITests;
 			sourceTree = "<group>";
 		};
-		C4A842D521D45240000C23E4 /* Provider */ = {
+		C450C29421D4E5CD008A1CDB /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				C4A842D621D4525B000C23E4 /* MountainProviderTest.swift */,
+				C4AD28A021D40B46001A4455 /* MountainRepository.swift */,
 			);
-			path = Provider;
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		C450C29521D4E999008A1CDB /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				C4A842D621D4525B000C23E4 /* MountainRepositoryTest.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		C4A842D521D45240000C23E4 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C450C29521D4E999008A1CDB /* Repository */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		C4AD289221D402AC001A4455 /* Resources */ = {
@@ -233,17 +252,17 @@
 			isa = PBXGroup;
 			children = (
 				C4AD289D21D40862001A4455 /* Mountain.swift */,
-				C4AD28A221D40C69001A4455 /* Error.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		C4AD289F21D40AF3001A4455 /* Provider */ = {
+		C4AD289F21D40AF3001A4455 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				C4AD28AB21D43D19001A4455 /* Mountaion */,
+				C450C29421D4E5CD008A1CDB /* Repository */,
+				C4AD28AB21D43D19001A4455 /* Provider */,
 			);
-			path = Provider;
+			path = Data;
 			sourceTree = "<group>";
 		};
 		C4AD28A421D40E5E001A4455 /* Json */ = {
@@ -254,13 +273,12 @@
 			path = Json;
 			sourceTree = "<group>";
 		};
-		C4AD28AB21D43D19001A4455 /* Mountaion */ = {
+		C4AD28AB21D43D19001A4455 /* Provider */ = {
 			isa = PBXGroup;
 			children = (
-				C4AD28A021D40B46001A4455 /* MountainProviderProtocol.swift */,
-				C4AD28A721D41549001A4455 /* MountainProvider.swift */,
+				C4AD28A721D41549001A4455 /* YamapProvider.swift */,
 			);
-			path = Mountaion;
+			path = Provider;
 			sourceTree = "<group>";
 		};
 		C4AD28B121D442FA001A4455 /* Utils */ = {
@@ -269,6 +287,23 @@
 				C4AD28AD21D43D47001A4455 /* JsonHelper.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		C4B58CB321D4FC3900139903 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C4B58CB421D4FC4400139903 /* Error */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C4B58CB421D4FC4400139903 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				C4B58CB521D4FE6E00139903 /* JsonDecodeError.swift */,
+				C4B58CB721D5015C00139903 /* ResponseError.swift */,
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 		ECFB9DFB29C534FCBA87A0BC /* Pods */ = {
@@ -526,13 +561,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4AD289921D4052A001A4455 /* MountainDetailInterface.swift in Sources */,
-				C4AD28A121D40B46001A4455 /* MountainProviderProtocol.swift in Sources */,
+				C4AD28A121D40B46001A4455 /* MountainRepository.swift in Sources */,
 				C43569FF21D3FCB900A5CA8F /* ViewController.swift in Sources */,
 				C4AD289E21D40862001A4455 /* Mountain.swift in Sources */,
 				C4AD289B21D40794001A4455 /* MountainListInterface.swift in Sources */,
-				C4AD28A321D40C69001A4455 /* Error.swift in Sources */,
+				C4B58CB821D5015C00139903 /* ResponseError.swift in Sources */,
+				C4B58CB621D4FE6E00139903 /* JsonDecodeError.swift in Sources */,
 				C43569FD21D3FCB900A5CA8F /* AppDelegate.swift in Sources */,
-				C4AD28A821D41549001A4455 /* MountainProvider.swift in Sources */,
+				C4AD28A821D41549001A4455 /* YamapProvider.swift in Sources */,
 				C4AD28AE21D43D47001A4455 /* JsonHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -542,7 +578,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4356A1221D3FCBB00A5CA8F /* MountainChallengeTests.swift in Sources */,
-				C4A842D721D4525B000C23E4 /* MountainProviderTest.swift in Sources */,
+				C4A842D721D4525B000C23E4 /* MountainRepositoryTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
