@@ -28,6 +28,10 @@
 		C4AD28AE21D43D47001A4455 /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD28AD21D43D47001A4455 /* JsonHelper.swift */; };
 		C4B58CB621D4FE6E00139903 /* JsonDecodeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B58CB521D4FE6E00139903 /* JsonDecodeError.swift */; };
 		C4B58CB821D5015C00139903 /* ResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B58CB721D5015C00139903 /* ResponseError.swift */; };
+		C4B58CBE21D52F0100139903 /* GetMountainListInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B58CBD21D52F0100139903 /* GetMountainListInteractorProtocol.swift */; };
+		C4B58CC021D52FE000139903 /* GetMountainListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B58CBF21D52FE000139903 /* GetMountainListInteractor.swift */; };
+		C4B58CC321D5396400139903 /* GetMountainImageInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B58CC221D5396400139903 /* GetMountainImageInteractorProtocol.swift */; };
+		C4B58CC521D539D500139903 /* GetMountainImageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B58CC421D539D500139903 /* GetMountainImageInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +79,10 @@
 		C4AD28AD21D43D47001A4455 /* JsonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonHelper.swift; sourceTree = "<group>"; };
 		C4B58CB521D4FE6E00139903 /* JsonDecodeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecodeError.swift; sourceTree = "<group>"; };
 		C4B58CB721D5015C00139903 /* ResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseError.swift; sourceTree = "<group>"; };
+		C4B58CBD21D52F0100139903 /* GetMountainListInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMountainListInteractorProtocol.swift; sourceTree = "<group>"; };
+		C4B58CBF21D52FE000139903 /* GetMountainListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMountainListInteractor.swift; sourceTree = "<group>"; };
+		C4B58CC221D5396400139903 /* GetMountainImageInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMountainImageInteractorProtocol.swift; sourceTree = "<group>"; };
+		C4B58CC421D539D500139903 /* GetMountainImageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMountainImageInteractor.swift; sourceTree = "<group>"; };
 		EC208CEB6AC7C57E4D36655D /* Pods-MountainChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MountainChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MountainChallengeTests/Pods-MountainChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FA35A844FCB432C20712CC8E /* Pods_MountainChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MountainChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -210,6 +218,7 @@
 		C4AD289321D402BA001A4455 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				C4B58CC121D5391E00139903 /* Mountain */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -304,6 +313,17 @@
 				C4B58CB721D5015C00139903 /* ResponseError.swift */,
 			);
 			path = Error;
+			sourceTree = "<group>";
+		};
+		C4B58CC121D5391E00139903 /* Mountain */ = {
+			isa = PBXGroup;
+			children = (
+				C4B58CBD21D52F0100139903 /* GetMountainListInteractorProtocol.swift */,
+				C4B58CBF21D52FE000139903 /* GetMountainListInteractor.swift */,
+				C4B58CC221D5396400139903 /* GetMountainImageInteractorProtocol.swift */,
+				C4B58CC421D539D500139903 /* GetMountainImageInteractor.swift */,
+			);
+			path = Mountain;
 			sourceTree = "<group>";
 		};
 		ECFB9DFB29C534FCBA87A0BC /* Pods */ = {
@@ -560,14 +580,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4B58CBE21D52F0100139903 /* GetMountainListInteractorProtocol.swift in Sources */,
 				C4AD289921D4052A001A4455 /* MountainDetailInterface.swift in Sources */,
 				C4AD28A121D40B46001A4455 /* MountainRepository.swift in Sources */,
 				C43569FF21D3FCB900A5CA8F /* ViewController.swift in Sources */,
+				C4B58CC521D539D500139903 /* GetMountainImageInteractor.swift in Sources */,
 				C4AD289E21D40862001A4455 /* Mountain.swift in Sources */,
+				C4B58CC021D52FE000139903 /* GetMountainListInteractor.swift in Sources */,
 				C4AD289B21D40794001A4455 /* MountainListInterface.swift in Sources */,
 				C4B58CB821D5015C00139903 /* ResponseError.swift in Sources */,
 				C4B58CB621D4FE6E00139903 /* JsonDecodeError.swift in Sources */,
 				C43569FD21D3FCB900A5CA8F /* AppDelegate.swift in Sources */,
+				C4B58CC321D5396400139903 /* GetMountainImageInteractorProtocol.swift in Sources */,
 				C4AD28A821D41549001A4455 /* YamapProvider.swift in Sources */,
 				C4AD28AE21D43D47001A4455 /* JsonHelper.swift in Sources */,
 			);
