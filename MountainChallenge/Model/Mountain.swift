@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Mountain {
+struct Mountain: Decodable {
     var id: Int
     var areaId: Int
     var name: String
@@ -16,7 +16,20 @@ struct Mountain {
     var description: String
     var prefectures: [String]
     var likeCount: Int
-    var isLike: Bool
+    var isLike: String
     var thumbnailUrl: String
     var imageUrl: String
+    
+    private enum CodingKeys: String, CodingKey {
+        case id
+        case areaId = "area_id"
+        case name
+        case elevation
+        case description
+        case prefectures
+        case likeCount = "like_count"
+        case isLike = "is_like"
+        case thumbnailUrl = "thumbnail_url"
+        case imageUrl = "image_url"
+    }
 }

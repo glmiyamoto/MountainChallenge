@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		573147A7F99FCBC32400DBA1 /* Pods_MountainChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A875C56F39E3A306D2EB493C /* Pods_MountainChallenge.framework */; };
+		319D35EAE9C8690BA621EA44 /* Pods_MountainChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93C48C924064302179588520 /* Pods_MountainChallengeTests.framework */; };
+		A1EAACFCB8EF6A024086BD3C /* Pods_MountainChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA35A844FCB432C20712CC8E /* Pods_MountainChallenge.framework */; };
 		C43569FD21D3FCB900A5CA8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43569FC21D3FCB900A5CA8F /* AppDelegate.swift */; };
 		C43569FF21D3FCB900A5CA8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43569FE21D3FCB900A5CA8F /* ViewController.swift */; };
 		C4356A0221D3FCB900A5CA8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4356A0021D3FCB900A5CA8F /* Main.storyboard */; };
@@ -15,12 +16,17 @@
 		C4356A0721D3FCBB00A5CA8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4356A0521D3FCBB00A5CA8F /* LaunchScreen.storyboard */; };
 		C4356A1221D3FCBB00A5CA8F /* MountainChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4356A1121D3FCBB00A5CA8F /* MountainChallengeTests.swift */; };
 		C4356A1D21D3FCBB00A5CA8F /* MountainChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4356A1C21D3FCBB00A5CA8F /* MountainChallengeUITests.swift */; };
+		C4A842D721D4525B000C23E4 /* MountainProviderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A842D621D4525B000C23E4 /* MountainProviderTest.swift */; };
 		C4AD289921D4052A001A4455 /* MountainDetailInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD289821D4052A001A4455 /* MountainDetailInterface.swift */; };
 		C4AD289B21D40794001A4455 /* MountainListInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD289A21D40794001A4455 /* MountainListInterface.swift */; };
 		C4AD289E21D40862001A4455 /* Mountain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD289D21D40862001A4455 /* Mountain.swift */; };
 		C4AD28A121D40B46001A4455 /* MountainProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD28A021D40B46001A4455 /* MountainProviderProtocol.swift */; };
 		C4AD28A321D40C69001A4455 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD28A221D40C69001A4455 /* Error.swift */; };
 		C4AD28A621D40E97001A4455 /* mountains.json in Resources */ = {isa = PBXBuildFile; fileRef = C4AD28A521D40E97001A4455 /* mountains.json */; };
+		C4AD28A821D41549001A4455 /* MountainProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD28A721D41549001A4455 /* MountainProvider.swift */; };
+		C4AD28A921D43A1A001A4455 /* mountains.json in Resources */ = {isa = PBXBuildFile; fileRef = C4AD28A521D40E97001A4455 /* mountains.json */; };
+		C4AD28AA21D43A1F001A4455 /* mountains.json in Resources */ = {isa = PBXBuildFile; fileRef = C4AD28A521D40E97001A4455 /* mountains.json */; };
+		C4AD28AE21D43D47001A4455 /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD28AD21D43D47001A4455 /* JsonHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +47,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A795197C200F775C75574F8B /* Pods-MountainChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MountainChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MountainChallenge/Pods-MountainChallenge.debug.xcconfig"; sourceTree = "<group>"; };
-		A875C56F39E3A306D2EB493C /* Pods_MountainChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MountainChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08F99228084664506537DC37 /* Pods-MountainChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MountainChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MountainChallenge/Pods-MountainChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		7A4CC970FACE6DD56CE6D07D /* Pods-MountainChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MountainChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MountainChallengeTests/Pods-MountainChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		81E95982CFAC5C79BBF6F90F /* Pods-MountainChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MountainChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-MountainChallenge/Pods-MountainChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		93C48C924064302179588520 /* Pods_MountainChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MountainChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C43569F921D3FCB900A5CA8F /* MountainChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MountainChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C43569FC21D3FCB900A5CA8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C43569FE21D3FCB900A5CA8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,13 +64,17 @@
 		C4356A1821D3FCBB00A5CA8F /* MountainChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MountainChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4356A1C21D3FCBB00A5CA8F /* MountainChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainChallengeUITests.swift; sourceTree = "<group>"; };
 		C4356A1E21D3FCBB00A5CA8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4A842D621D4525B000C23E4 /* MountainProviderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainProviderTest.swift; sourceTree = "<group>"; };
 		C4AD289821D4052A001A4455 /* MountainDetailInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainDetailInterface.swift; sourceTree = "<group>"; };
 		C4AD289A21D40794001A4455 /* MountainListInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainListInterface.swift; sourceTree = "<group>"; };
 		C4AD289D21D40862001A4455 /* Mountain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mountain.swift; sourceTree = "<group>"; };
 		C4AD28A021D40B46001A4455 /* MountainProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainProviderProtocol.swift; sourceTree = "<group>"; };
 		C4AD28A221D40C69001A4455 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		C4AD28A521D40E97001A4455 /* mountains.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mountains.json; sourceTree = "<group>"; };
-		ECEB0CEC1F9BAC908524C3C8 /* Pods-MountainChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MountainChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-MountainChallenge/Pods-MountainChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		C4AD28A721D41549001A4455 /* MountainProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainProvider.swift; sourceTree = "<group>"; };
+		C4AD28AD21D43D47001A4455 /* JsonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonHelper.swift; sourceTree = "<group>"; };
+		EC208CEB6AC7C57E4D36655D /* Pods-MountainChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MountainChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MountainChallengeTests/Pods-MountainChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA35A844FCB432C20712CC8E /* Pods_MountainChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MountainChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				573147A7F99FCBC32400DBA1 /* Pods_MountainChallenge.framework in Frameworks */,
+				A1EAACFCB8EF6A024086BD3C /* Pods_MountainChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				319D35EAE9C8690BA621EA44 /* Pods_MountainChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,19 +104,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0622ACD5A77E0B8172BBD5EE /* Pods */ = {
+		AA889B50C8AF75BE44B3FA17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A795197C200F775C75574F8B /* Pods-MountainChallenge.debug.xcconfig */,
-				ECEB0CEC1F9BAC908524C3C8 /* Pods-MountainChallenge.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		15DC2C8B9341DB2D5B478F78 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A875C56F39E3A306D2EB493C /* Pods_MountainChallenge.framework */,
+				FA35A844FCB432C20712CC8E /* Pods_MountainChallenge.framework */,
+				93C48C924064302179588520 /* Pods_MountainChallengeTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -115,8 +120,8 @@
 				C4356A1021D3FCBB00A5CA8F /* MountainChallengeTests */,
 				C4356A1B21D3FCBB00A5CA8F /* MountainChallengeUITests */,
 				C43569FA21D3FCB900A5CA8F /* Products */,
-				0622ACD5A77E0B8172BBD5EE /* Pods */,
-				15DC2C8B9341DB2D5B478F78 /* Frameworks */,
+				ECFB9DFB29C534FCBA87A0BC /* Pods */,
+				AA889B50C8AF75BE44B3FA17 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +143,7 @@
 				C4AD289521D4047E001A4455 /* Modules */,
 				C4AD289F21D40AF3001A4455 /* Provider */,
 				C4AD289221D402AC001A4455 /* Resources */,
+				C4AD28B121D442FA001A4455 /* Utils */,
 				C43569FC21D3FCB900A5CA8F /* AppDelegate.swift */,
 				C43569FE21D3FCB900A5CA8F /* ViewController.swift */,
 				C4356A0821D3FCBB00A5CA8F /* Info.plist */,
@@ -148,6 +154,7 @@
 		C4356A1021D3FCBB00A5CA8F /* MountainChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				C4A842D521D45240000C23E4 /* Provider */,
 				C4356A1121D3FCBB00A5CA8F /* MountainChallengeTests.swift */,
 				C4356A1321D3FCBB00A5CA8F /* Info.plist */,
 			);
@@ -161,6 +168,14 @@
 				C4356A1E21D3FCBB00A5CA8F /* Info.plist */,
 			);
 			path = MountainChallengeUITests;
+			sourceTree = "<group>";
+		};
+		C4A842D521D45240000C23E4 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				C4A842D621D4525B000C23E4 /* MountainProviderTest.swift */,
+			);
+			path = Provider;
 			sourceTree = "<group>";
 		};
 		C4AD289221D402AC001A4455 /* Resources */ = {
@@ -226,7 +241,7 @@
 		C4AD289F21D40AF3001A4455 /* Provider */ = {
 			isa = PBXGroup;
 			children = (
-				C4AD28A021D40B46001A4455 /* MountainProviderProtocol.swift */,
+				C4AD28AB21D43D19001A4455 /* Mountaion */,
 			);
 			path = Provider;
 			sourceTree = "<group>";
@@ -239,6 +254,34 @@
 			path = Json;
 			sourceTree = "<group>";
 		};
+		C4AD28AB21D43D19001A4455 /* Mountaion */ = {
+			isa = PBXGroup;
+			children = (
+				C4AD28A021D40B46001A4455 /* MountainProviderProtocol.swift */,
+				C4AD28A721D41549001A4455 /* MountainProvider.swift */,
+			);
+			path = Mountaion;
+			sourceTree = "<group>";
+		};
+		C4AD28B121D442FA001A4455 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C4AD28AD21D43D47001A4455 /* JsonHelper.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		ECFB9DFB29C534FCBA87A0BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08F99228084664506537DC37 /* Pods-MountainChallenge.debug.xcconfig */,
+				81E95982CFAC5C79BBF6F90F /* Pods-MountainChallenge.release.xcconfig */,
+				EC208CEB6AC7C57E4D36655D /* Pods-MountainChallengeTests.debug.xcconfig */,
+				7A4CC970FACE6DD56CE6D07D /* Pods-MountainChallengeTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -246,11 +289,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4356A2121D3FCBB00A5CA8F /* Build configuration list for PBXNativeTarget "MountainChallenge" */;
 			buildPhases = (
-				7655BEA115BC510CC55EC344 /* [CP] Check Pods Manifest.lock */,
+				78AB38FDF308EE44AE911702 /* [CP] Check Pods Manifest.lock */,
 				C43569F521D3FCB900A5CA8F /* Sources */,
 				C43569F621D3FCB900A5CA8F /* Frameworks */,
 				C43569F721D3FCB900A5CA8F /* Resources */,
-				77EF17921CB888BF83B439E9 /* [CP] Embed Pods Frameworks */,
+				009D33676E5157E127F4A323 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -265,9 +308,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4356A2421D3FCBB00A5CA8F /* Build configuration list for PBXNativeTarget "MountainChallengeTests" */;
 			buildPhases = (
+				D88059188646C9E4DAC88815 /* [CP] Check Pods Manifest.lock */,
 				C4356A0921D3FCBB00A5CA8F /* Sources */,
 				C4356A0A21D3FCBB00A5CA8F /* Frameworks */,
 				C4356A0B21D3FCBB00A5CA8F /* Resources */,
+				BF077126ECA357065F00A923 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -356,6 +401,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4AD28A921D43A1A001A4455 /* mountains.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,13 +409,44 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4AD28AA21D43A1F001A4455 /* mountains.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7655BEA115BC510CC55EC344 /* [CP] Check Pods Manifest.lock */ = {
+		009D33676E5157E127F4A323 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MountainChallenge/Pods-MountainChallenge-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MountainChallenge/Pods-MountainChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78AB38FDF308EE44AE911702 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -391,7 +468,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		77EF17921CB888BF83B439E9 /* [CP] Embed Pods Frameworks */ = {
+		BF077126ECA357065F00A923 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -399,20 +476,46 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MountainChallenge/Pods-MountainChallenge-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${SRCROOT}/Pods/Target Support Files/Pods-MountainChallengeTests/Pods-MountainChallengeTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MountainChallenge/Pods-MountainChallenge-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MountainChallengeTests/Pods-MountainChallengeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D88059188646C9E4DAC88815 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MountainChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -429,6 +532,8 @@
 				C4AD289B21D40794001A4455 /* MountainListInterface.swift in Sources */,
 				C4AD28A321D40C69001A4455 /* Error.swift in Sources */,
 				C43569FD21D3FCB900A5CA8F /* AppDelegate.swift in Sources */,
+				C4AD28A821D41549001A4455 /* MountainProvider.swift in Sources */,
+				C4AD28AE21D43D47001A4455 /* JsonHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +542,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4356A1221D3FCBB00A5CA8F /* MountainChallengeTests.swift in Sources */,
+				C4A842D721D4525B000C23E4 /* MountainProviderTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,7 +707,7 @@
 		};
 		C4356A2221D3FCBB00A5CA8F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A795197C200F775C75574F8B /* Pods-MountainChallenge.debug.xcconfig */;
+			baseConfigurationReference = 08F99228084664506537DC37 /* Pods-MountainChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -620,7 +726,7 @@
 		};
 		C4356A2321D3FCBB00A5CA8F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ECEB0CEC1F9BAC908524C3C8 /* Pods-MountainChallenge.release.xcconfig */;
+			baseConfigurationReference = 81E95982CFAC5C79BBF6F90F /* Pods-MountainChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -639,6 +745,7 @@
 		};
 		C4356A2521D3FCBB00A5CA8F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC208CEB6AC7C57E4D36655D /* Pods-MountainChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -659,6 +766,7 @@
 		};
 		C4356A2621D3FCBB00A5CA8F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A4CC970FACE6DD56CE6D07D /* Pods-MountainChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
