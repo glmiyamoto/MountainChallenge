@@ -14,7 +14,6 @@
 		C4356A0221D3FCB900A5CA8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4356A0021D3FCB900A5CA8F /* Main.storyboard */; };
 		C4356A0421D3FCBB00A5CA8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4356A0321D3FCBB00A5CA8F /* Assets.xcassets */; };
 		C4356A0721D3FCBB00A5CA8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4356A0521D3FCBB00A5CA8F /* LaunchScreen.storyboard */; };
-		C4356A1221D3FCBB00A5CA8F /* MountainChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4356A1121D3FCBB00A5CA8F /* MountainChallengeTests.swift */; };
 		C4356A1D21D3FCBB00A5CA8F /* MountainChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4356A1C21D3FCBB00A5CA8F /* MountainChallengeUITests.swift */; };
 		C43EE6FA21D65FF900EBABA0 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43EE6F921D65FF900EBABA0 /* StringExtensions.swift */; };
 		C43EE6FE21D66CC600EBABA0 /* MountainTableViewCellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43EE6FD21D66CC600EBABA0 /* MountainTableViewCellViewModelProtocol.swift */; };
@@ -74,7 +73,6 @@
 		C4356A0621D3FCBB00A5CA8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4356A0821D3FCBB00A5CA8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4356A0D21D3FCBB00A5CA8F /* MountainChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MountainChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C4356A1121D3FCBB00A5CA8F /* MountainChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainChallengeTests.swift; sourceTree = "<group>"; };
 		C4356A1321D3FCBB00A5CA8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4356A1821D3FCBB00A5CA8F /* MountainChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MountainChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4356A1C21D3FCBB00A5CA8F /* MountainChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainChallengeUITests.swift; sourceTree = "<group>"; };
@@ -186,8 +184,6 @@
 			isa = PBXGroup;
 			children = (
 				C4A842D521D45240000C23E4 /* Data */,
-				C4593F7A21D6CC1E007641DE /* Domain */,
-				C4356A1121D3FCBB00A5CA8F /* MountainChallengeTests.swift */,
 				C4356A1321D3FCBB00A5CA8F /* Info.plist */,
 			);
 			path = MountainChallengeTests;
@@ -216,13 +212,6 @@
 				C4A842D621D4525B000C23E4 /* MountainRepositoryTest.swift */,
 			);
 			path = Repository;
-			sourceTree = "<group>";
-		};
-		C4593F7A21D6CC1E007641DE /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Domain;
 			sourceTree = "<group>";
 		};
 		C4A842D521D45240000C23E4 /* Data */ = {
@@ -657,7 +646,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4356A1221D3FCBB00A5CA8F /* MountainChallengeTests.swift in Sources */,
 				C4A842D721D4525B000C23E4 /* MountainRepositoryTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

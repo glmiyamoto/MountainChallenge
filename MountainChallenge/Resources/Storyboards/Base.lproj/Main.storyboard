@@ -133,12 +133,14 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="いいね！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AiW-Rv-jBD">
                                                 <rect key="frame" x="271" y="64.5" width="69.5" height="20.5"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="LikeLabel"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFB-ZG-vUj">
                                                 <rect key="frame" x="348.5" y="64" width="10.5" height="21"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="LikeCountLabel"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -248,6 +250,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="38L-33-s36">
                                 <rect key="frame" x="287" y="579" width="56" height="56"/>
                                 <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="LikeButton"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="QSx-Sg-IIT"/>
                                     <constraint firstAttribute="width" constant="56" id="yax-jt-d2O"/>
