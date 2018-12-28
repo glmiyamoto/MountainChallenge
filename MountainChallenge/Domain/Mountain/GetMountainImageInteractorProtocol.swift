@@ -13,6 +13,6 @@ protocol GetMountainImageInteractorProtocol {
 }
 
 protocol GetMountainImageCallback: class {
-    func onSuccess(image: Image)
+    func onSuccess(url: String, image: Image)
     func onError(error: Error)
 }

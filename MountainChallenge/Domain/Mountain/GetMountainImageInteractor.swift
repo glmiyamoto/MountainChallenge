@@ -8,6 +8,9 @@
 
 import RxSwift
 
+/**
+ Interactor class that contain get mountain image use case
+ */
 final class GetMountainImageInteractor {
     // MARK: - Repository
     var repository: MountainRepository!
@@ -21,13 +24,15 @@ final class GetMountainImageInteractor {
     }
 }
 
+// MARK: - Extension - Get mountain image interactor protocol
 extension GetMountainImageInteractor: GetMountainImageInteractorProtocol {
+    // MARK: - Protocol 
     func getMountainImage(url: String) {
         _ = repository.getMountainImage(url: url)
             .observeOn(MainScheduler.instance)
             .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .background))
             .subscribe(onSuccess: { image in
-                self.callback?.onSuccess(image: image)
+                self.callback?.onSuccess(url: url, image: image)
             }, onError: { error in
                 self.callback?.onError(error: error)
             })

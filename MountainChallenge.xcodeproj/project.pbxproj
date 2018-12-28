@@ -16,9 +16,14 @@
 		C4356A0721D3FCBB00A5CA8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4356A0521D3FCBB00A5CA8F /* LaunchScreen.storyboard */; };
 		C4356A1221D3FCBB00A5CA8F /* MountainChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4356A1121D3FCBB00A5CA8F /* MountainChallengeTests.swift */; };
 		C4356A1D21D3FCBB00A5CA8F /* MountainChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4356A1C21D3FCBB00A5CA8F /* MountainChallengeUITests.swift */; };
+		C43EE6FA21D65FF900EBABA0 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43EE6F921D65FF900EBABA0 /* StringExtensions.swift */; };
+		C43EE6FE21D66CC600EBABA0 /* MountainTableViewCellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43EE6FD21D66CC600EBABA0 /* MountainTableViewCellViewModelProtocol.swift */; };
+		C43EE70021D6871900EBABA0 /* MountainDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43EE6FF21D6871900EBABA0 /* MountainDetailViewModel.swift */; };
+		C4593F7721D6A2E9007641DE /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4593F7621D6A2E9007641DE /* ColorExtensions.swift */; };
+		C4593F7921D6A4E0007641DE /* LikeStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4593F7821D6A4E0007641DE /* LikeStatus.swift */; };
 		C4A842D721D4525B000C23E4 /* MountainRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A842D621D4525B000C23E4 /* MountainRepositoryTest.swift */; };
-		C4AD289921D4052A001A4455 /* MountainDetailInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD289821D4052A001A4455 /* MountainDetailInterface.swift */; };
-		C4AD289B21D40794001A4455 /* MountainListInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD289A21D40794001A4455 /* MountainListInterface.swift */; };
+		C4AD289921D4052A001A4455 /* MountainDetailViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD289821D4052A001A4455 /* MountainDetailViewModelProtocol.swift */; };
+		C4AD289B21D40794001A4455 /* MountainListViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD289A21D40794001A4455 /* MountainListViewModelProtocol.swift */; };
 		C4AD289E21D40862001A4455 /* Mountain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD289D21D40862001A4455 /* Mountain.swift */; };
 		C4AD28A121D40B46001A4455 /* MountainRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD28A021D40B46001A4455 /* MountainRepository.swift */; };
 		C4AD28A621D40E97001A4455 /* mountains.json in Resources */ = {isa = PBXBuildFile; fileRef = C4AD28A521D40E97001A4455 /* mountains.json */; };
@@ -32,6 +37,11 @@
 		C4B58CC021D52FE000139903 /* GetMountainListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B58CBF21D52FE000139903 /* GetMountainListInteractor.swift */; };
 		C4B58CC321D5396400139903 /* GetMountainImageInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B58CC221D5396400139903 /* GetMountainImageInteractorProtocol.swift */; };
 		C4B58CC521D539D500139903 /* GetMountainImageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B58CC421D539D500139903 /* GetMountainImageInteractor.swift */; };
+		C4B58CC721D548DC00139903 /* MountainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B58CC621D548DC00139903 /* MountainTableViewCell.swift */; };
+		C4B58CC921D553F300139903 /* MountainListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B58CC821D553F300139903 /* MountainListViewController.swift */; };
+		C4B58CCB21D579B200139903 /* MountainDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B58CCA21D579B200139903 /* MountainDetailViewController.swift */; };
+		C4B58CD821D59D2D00139903 /* MountainListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B58CD721D59D2D00139903 /* MountainListViewModel.swift */; };
+		C4B58CDF21D5AC1D00139903 /* MountainTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B58CDE21D5AC1D00139903 /* MountainTableViewCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,9 +79,14 @@
 		C4356A1821D3FCBB00A5CA8F /* MountainChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MountainChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4356A1C21D3FCBB00A5CA8F /* MountainChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainChallengeUITests.swift; sourceTree = "<group>"; };
 		C4356A1E21D3FCBB00A5CA8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C43EE6F921D65FF900EBABA0 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		C43EE6FD21D66CC600EBABA0 /* MountainTableViewCellViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainTableViewCellViewModelProtocol.swift; sourceTree = "<group>"; };
+		C43EE6FF21D6871900EBABA0 /* MountainDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainDetailViewModel.swift; sourceTree = "<group>"; };
+		C4593F7621D6A2E9007641DE /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		C4593F7821D6A4E0007641DE /* LikeStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeStatus.swift; sourceTree = "<group>"; };
 		C4A842D621D4525B000C23E4 /* MountainRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainRepositoryTest.swift; sourceTree = "<group>"; };
-		C4AD289821D4052A001A4455 /* MountainDetailInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainDetailInterface.swift; sourceTree = "<group>"; };
-		C4AD289A21D40794001A4455 /* MountainListInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainListInterface.swift; sourceTree = "<group>"; };
+		C4AD289821D4052A001A4455 /* MountainDetailViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainDetailViewModelProtocol.swift; sourceTree = "<group>"; };
+		C4AD289A21D40794001A4455 /* MountainListViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainListViewModelProtocol.swift; sourceTree = "<group>"; };
 		C4AD289D21D40862001A4455 /* Mountain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mountain.swift; sourceTree = "<group>"; };
 		C4AD28A021D40B46001A4455 /* MountainRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainRepository.swift; sourceTree = "<group>"; };
 		C4AD28A521D40E97001A4455 /* mountains.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mountains.json; sourceTree = "<group>"; };
@@ -83,6 +98,11 @@
 		C4B58CBF21D52FE000139903 /* GetMountainListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMountainListInteractor.swift; sourceTree = "<group>"; };
 		C4B58CC221D5396400139903 /* GetMountainImageInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMountainImageInteractorProtocol.swift; sourceTree = "<group>"; };
 		C4B58CC421D539D500139903 /* GetMountainImageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMountainImageInteractor.swift; sourceTree = "<group>"; };
+		C4B58CC621D548DC00139903 /* MountainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainTableViewCell.swift; sourceTree = "<group>"; };
+		C4B58CC821D553F300139903 /* MountainListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainListViewController.swift; sourceTree = "<group>"; };
+		C4B58CCA21D579B200139903 /* MountainDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainDetailViewController.swift; sourceTree = "<group>"; };
+		C4B58CD721D59D2D00139903 /* MountainListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainListViewModel.swift; sourceTree = "<group>"; };
+		C4B58CDE21D5AC1D00139903 /* MountainTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		EC208CEB6AC7C57E4D36655D /* Pods-MountainChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MountainChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MountainChallengeTests/Pods-MountainChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FA35A844FCB432C20712CC8E /* Pods_MountainChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MountainChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -166,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				C4A842D521D45240000C23E4 /* Data */,
+				C4593F7A21D6CC1E007641DE /* Domain */,
 				C4356A1121D3FCBB00A5CA8F /* MountainChallengeTests.swift */,
 				C4356A1321D3FCBB00A5CA8F /* Info.plist */,
 			);
@@ -195,6 +216,13 @@
 				C4A842D621D4525B000C23E4 /* MountainRepositoryTest.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		C4593F7A21D6CC1E007641DE /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 		C4A842D521D45240000C23E4 /* Data */ = {
@@ -244,7 +272,10 @@
 		C4AD289621D404DA001A4455 /* MountainList */ = {
 			isa = PBXGroup;
 			children = (
-				C4AD289A21D40794001A4455 /* MountainListInterface.swift */,
+				C4B58CD921D5A0CA00139903 /* Cell */,
+				C4B58CC821D553F300139903 /* MountainListViewController.swift */,
+				C4B58CD721D59D2D00139903 /* MountainListViewModel.swift */,
+				C4AD289A21D40794001A4455 /* MountainListViewModelProtocol.swift */,
 			);
 			path = MountainList;
 			sourceTree = "<group>";
@@ -252,7 +283,9 @@
 		C4AD289721D404FA001A4455 /* MountainDetail */ = {
 			isa = PBXGroup;
 			children = (
-				C4AD289821D4052A001A4455 /* MountainDetailInterface.swift */,
+				C4B58CCA21D579B200139903 /* MountainDetailViewController.swift */,
+				C43EE6FF21D6871900EBABA0 /* MountainDetailViewModel.swift */,
+				C4AD289821D4052A001A4455 /* MountainDetailViewModelProtocol.swift */,
 			);
 			path = MountainDetail;
 			sourceTree = "<group>";
@@ -261,6 +294,7 @@
 			isa = PBXGroup;
 			children = (
 				C4AD289D21D40862001A4455 /* Mountain.swift */,
+				C4593F7821D6A4E0007641DE /* LikeStatus.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -294,6 +328,8 @@
 			isa = PBXGroup;
 			children = (
 				C4AD28AD21D43D47001A4455 /* JsonHelper.swift */,
+				C43EE6F921D65FF900EBABA0 /* StringExtensions.swift */,
+				C4593F7621D6A2E9007641DE /* ColorExtensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -324,6 +360,16 @@
 				C4B58CC421D539D500139903 /* GetMountainImageInteractor.swift */,
 			);
 			path = Mountain;
+			sourceTree = "<group>";
+		};
+		C4B58CD921D5A0CA00139903 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C4B58CC621D548DC00139903 /* MountainTableViewCell.swift */,
+				C4B58CDE21D5AC1D00139903 /* MountainTableViewCellViewModel.swift */,
+				C43EE6FD21D66CC600EBABA0 /* MountainTableViewCellViewModelProtocol.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		ECFB9DFB29C534FCBA87A0BC /* Pods */ = {
@@ -581,18 +627,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4B58CBE21D52F0100139903 /* GetMountainListInteractorProtocol.swift in Sources */,
-				C4AD289921D4052A001A4455 /* MountainDetailInterface.swift in Sources */,
+				C4593F7721D6A2E9007641DE /* ColorExtensions.swift in Sources */,
+				C4AD289921D4052A001A4455 /* MountainDetailViewModelProtocol.swift in Sources */,
+				C4B58CC721D548DC00139903 /* MountainTableViewCell.swift in Sources */,
 				C4AD28A121D40B46001A4455 /* MountainRepository.swift in Sources */,
 				C43569FF21D3FCB900A5CA8F /* ViewController.swift in Sources */,
 				C4B58CC521D539D500139903 /* GetMountainImageInteractor.swift in Sources */,
+				C43EE6FA21D65FF900EBABA0 /* StringExtensions.swift in Sources */,
 				C4AD289E21D40862001A4455 /* Mountain.swift in Sources */,
 				C4B58CC021D52FE000139903 /* GetMountainListInteractor.swift in Sources */,
-				C4AD289B21D40794001A4455 /* MountainListInterface.swift in Sources */,
+				C4AD289B21D40794001A4455 /* MountainListViewModelProtocol.swift in Sources */,
 				C4B58CB821D5015C00139903 /* ResponseError.swift in Sources */,
+				C4B58CDF21D5AC1D00139903 /* MountainTableViewCellViewModel.swift in Sources */,
+				C4B58CC921D553F300139903 /* MountainListViewController.swift in Sources */,
+				C4593F7921D6A4E0007641DE /* LikeStatus.swift in Sources */,
 				C4B58CB621D4FE6E00139903 /* JsonDecodeError.swift in Sources */,
 				C43569FD21D3FCB900A5CA8F /* AppDelegate.swift in Sources */,
 				C4B58CC321D5396400139903 /* GetMountainImageInteractorProtocol.swift in Sources */,
+				C43EE6FE21D66CC600EBABA0 /* MountainTableViewCellViewModelProtocol.swift in Sources */,
+				C4B58CD821D59D2D00139903 /* MountainListViewModel.swift in Sources */,
+				C43EE70021D6871900EBABA0 /* MountainDetailViewModel.swift in Sources */,
 				C4AD28A821D41549001A4455 /* YamapProvider.swift in Sources */,
+				C4B58CCB21D579B200139903 /* MountainDetailViewController.swift in Sources */,
 				C4AD28AE21D43D47001A4455 /* JsonHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

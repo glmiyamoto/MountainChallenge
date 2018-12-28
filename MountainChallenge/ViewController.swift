@@ -14,14 +14,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        let repository: MountainRepository = YamapProvider.mountainDataSource
-        repository.getMountains()
-            .observeOn(MainScheduler.instance)
-            .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .background))
-            .subscribe(onSuccess: { mountains in
-            }, onError: { error in
-        })
     }
 }
 

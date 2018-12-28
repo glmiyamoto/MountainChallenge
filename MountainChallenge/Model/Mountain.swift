@@ -8,6 +8,9 @@
 
 import Foundation
 
+/**
+ Mountain model structure
+ */
 struct Mountain: Decodable {
     // MARK: - Fields
     var id: Int
@@ -33,5 +36,18 @@ struct Mountain: Decodable {
         case isLike = "is_like"
         case thumbnailUrl = "thumbnail_url"
         case imageUrl = "image_url"
+    }
+    
+    init(name: String) {
+        id = 0
+        areaId = 0
+        self.name = name
+        elevation = 0.0
+        description = ""
+        prefectures = [String]()
+        likeCount = 0
+        isLike = "true"
+        thumbnailUrl = ""
+        imageUrl = ""
     }
 }

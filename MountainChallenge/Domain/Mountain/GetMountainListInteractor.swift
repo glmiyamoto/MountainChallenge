@@ -8,6 +8,9 @@
 
 import RxSwift
 
+/**
+ Interactor class that contain get mountain list use case
+ */
 final class GetMountainListInteractor {
     // MARK: - Repository
     var repository: MountainRepository!
@@ -21,6 +24,7 @@ final class GetMountainListInteractor {
     }
 }
 
+// MARK: - Extension - Get mountain list interactor protocol
 extension GetMountainListInteractor: GetMountainListInteractorProtocol {
     func getMountains() {
         _ = repository.getMountains()

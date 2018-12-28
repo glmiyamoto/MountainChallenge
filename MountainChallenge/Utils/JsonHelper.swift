@@ -8,6 +8,9 @@
 
 import Foundation
 
+/**
+ Helper class for JSON.
+ */
 final class JsonHelper {
     // MARK: - Constants
     static let JsonFileExtension = "json"
