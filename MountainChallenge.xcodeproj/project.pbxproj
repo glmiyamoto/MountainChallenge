@@ -21,6 +21,10 @@
 		C4593F7721D6A2E9007641DE /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4593F7621D6A2E9007641DE /* ColorExtensions.swift */; };
 		C4593F7921D6A4E0007641DE /* LikeStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4593F7821D6A4E0007641DE /* LikeStatus.swift */; };
 		C4A842D721D4525B000C23E4 /* MountainRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A842D621D4525B000C23E4 /* MountainRepositoryTest.swift */; };
+		C4AC79E4221C286700A64016 /* ProviderProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AC79E3221C286700A64016 /* ProviderProtocols.swift */; };
+		C4AC79E9221C2F0600A64016 /* MountainUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AC79E8221C2F0600A64016 /* MountainUrl.swift */; };
+		C4AC79EB221C3FBD00A64016 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AC79EA221C3FBD00A64016 /* BaseViewController.swift */; };
+		C4AC79ED221C4FBA00A64016 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AC79EC221C4FBA00A64016 /* NavigationController.swift */; };
 		C4AD289921D4052A001A4455 /* MountainDetailViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD289821D4052A001A4455 /* MountainDetailViewModelProtocol.swift */; };
 		C4AD289B21D40794001A4455 /* MountainListViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD289A21D40794001A4455 /* MountainListViewModelProtocol.swift */; };
 		C4AD289E21D40862001A4455 /* Mountain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD289D21D40862001A4455 /* Mountain.swift */; };
@@ -83,6 +87,10 @@
 		C4593F7621D6A2E9007641DE /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		C4593F7821D6A4E0007641DE /* LikeStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeStatus.swift; sourceTree = "<group>"; };
 		C4A842D621D4525B000C23E4 /* MountainRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainRepositoryTest.swift; sourceTree = "<group>"; };
+		C4AC79E3221C286700A64016 /* ProviderProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderProtocols.swift; sourceTree = "<group>"; };
+		C4AC79E8221C2F0600A64016 /* MountainUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainUrl.swift; sourceTree = "<group>"; };
+		C4AC79EA221C3FBD00A64016 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		C4AC79EC221C4FBA00A64016 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		C4AD289821D4052A001A4455 /* MountainDetailViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainDetailViewModelProtocol.swift; sourceTree = "<group>"; };
 		C4AD289A21D40794001A4455 /* MountainListViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainListViewModelProtocol.swift; sourceTree = "<group>"; };
 		C4AD289D21D40862001A4455 /* Mountain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mountain.swift; sourceTree = "<group>"; };
@@ -201,7 +209,7 @@
 		C450C29421D4E5CD008A1CDB /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				C4AD28A021D40B46001A4455 /* MountainRepository.swift */,
+				C4AC79E7221C2ED200A64016 /* Mountain */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -220,6 +228,15 @@
 				C450C29521D4E999008A1CDB /* Repository */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		C4AC79E7221C2ED200A64016 /* Mountain */ = {
+			isa = PBXGroup;
+			children = (
+				C4AD28A021D40B46001A4455 /* MountainRepository.swift */,
+				C4AC79E8221C2F0600A64016 /* MountainUrl.swift */,
+			);
+			path = Mountain;
 			sourceTree = "<group>";
 		};
 		C4AD289221D402AC001A4455 /* Resources */ = {
@@ -254,6 +271,8 @@
 			children = (
 				C4AD289721D404FA001A4455 /* MountainDetail */,
 				C4AD289621D404DA001A4455 /* MountainList */,
+				C4AC79EA221C3FBD00A64016 /* BaseViewController.swift */,
+				C4AC79EC221C4FBA00A64016 /* NavigationController.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -308,6 +327,7 @@
 		C4AD28AB21D43D19001A4455 /* Provider */ = {
 			isa = PBXGroup;
 			children = (
+				C4AC79E3221C286700A64016 /* ProviderProtocols.swift */,
 				C4AD28A721D41549001A4455 /* YamapProvider.swift */,
 			);
 			path = Provider;
@@ -615,16 +635,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4AC79E9221C2F0600A64016 /* MountainUrl.swift in Sources */,
 				C4B58CBE21D52F0100139903 /* GetMountainListInteractorProtocol.swift in Sources */,
 				C4593F7721D6A2E9007641DE /* ColorExtensions.swift in Sources */,
 				C4AD289921D4052A001A4455 /* MountainDetailViewModelProtocol.swift in Sources */,
 				C4B58CC721D548DC00139903 /* MountainTableViewCell.swift in Sources */,
+				C4AC79EB221C3FBD00A64016 /* BaseViewController.swift in Sources */,
 				C4AD28A121D40B46001A4455 /* MountainRepository.swift in Sources */,
 				C43569FF21D3FCB900A5CA8F /* ViewController.swift in Sources */,
+				C4AC79ED221C4FBA00A64016 /* NavigationController.swift in Sources */,
 				C4B58CC521D539D500139903 /* GetMountainImageInteractor.swift in Sources */,
 				C43EE6FA21D65FF900EBABA0 /* StringExtensions.swift in Sources */,
 				C4AD289E21D40862001A4455 /* Mountain.swift in Sources */,
 				C4B58CC021D52FE000139903 /* GetMountainListInteractor.swift in Sources */,
+				C4AC79E4221C286700A64016 /* ProviderProtocols.swift in Sources */,
 				C4AD289B21D40794001A4455 /* MountainListViewModelProtocol.swift in Sources */,
 				C4B58CB821D5015C00139903 /* ResponseError.swift in Sources */,
 				C4B58CDF21D5AC1D00139903 /* MountainTableViewCellViewModel.swift in Sources */,

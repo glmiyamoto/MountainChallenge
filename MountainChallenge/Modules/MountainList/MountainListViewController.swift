@@ -9,7 +9,7 @@
 import UIKit
 import RxSwift
 
-class MountainListViewController: UITableViewController {
+class MountainListViewController: UITableViewController, BaseViewController {
     // MARK: - Properties
     private let viewModel: MountainListViewModelProtocol = MountainListViewModel()
     private let disposeBag = DisposeBag()
@@ -22,6 +22,7 @@ class MountainListViewController: UITableViewController {
         bindViewModel()
         
         // Load data
+        self.showLoading(on: self.navigationController)
         viewModel.loadMountains()
     }
 
@@ -67,7 +68,10 @@ class MountainListViewController: UITableViewController {
     // MARK: - Class method
     func bindViewModel() {
         viewModel.listUpdated.asObservable()
-            .subscribe(onNext: { self.tableView.reloadData() })
+            .subscribe(onNext: {
+                self.tableView.reloadData()
+                self.hideLoding(on: self.navigationController)
+            })
             .disposed(by: disposeBag)
     }
 }

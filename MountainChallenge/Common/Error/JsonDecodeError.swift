@@ -11,4 +11,5 @@ import Foundation
 enum JsonDecodeError: Swift.Error {
     case jsonFileNotFound
     case jsonParseFailed(String)
+    case invalidParseData
 }
