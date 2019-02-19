@@ -66,6 +66,7 @@ class MountainListViewController: UITableViewController, BaseViewController {
     }
     
     // MARK: - Class method
+    
     func bindViewModel() {
         viewModel.listUpdated.asObservable()
             .subscribe(onNext: {
@@ -73,5 +74,24 @@ class MountainListViewController: UITableViewController, BaseViewController {
                 self.hideLoding(on: self.navigationController)
             })
             .disposed(by: disposeBag)
+        viewModel.error.asObservable()
+            .subscribe(onNext: { error in
+                if error != nil {
+                    self.hideLoding(on: self.navigationController)
+                    self.showErrorMessage()
+                }
+            })
+            .disposed(by: disposeBag)
+    }
+    
+    fileprivate func showErrorMessage() {
+        let alert = UIAlertController(title: "エラー", message: "山リストの読み込みに失敗しました :(", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: { action in
+            alert.dismiss(animated: true, completion: {
+                
+            })
+        })
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
     }
 }
