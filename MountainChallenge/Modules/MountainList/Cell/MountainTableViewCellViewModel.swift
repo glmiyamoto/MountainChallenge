@@ -6,8 +6,9 @@
 //  Copyright © 2018 Gustavo Miyamoto. All rights reserved.
 //
 
-import RxSwift
 import AlamofireImage
+import Moya
+import RxSwift
 
 /**
  ViewModel class to bind mountain table view cell information.
@@ -27,7 +28,7 @@ final class MountainTableViewCellViewModel {
         data = mountain
         
         // Initialize interactor
-        let repository = YamapProvider.mountainDataSource
+        let repository = MountainDataSource(provider: MoyaProvider<MountainApi>())
         interactor = GetMountainImageInteractor(repository: repository)
         interactor.callback = self
     }

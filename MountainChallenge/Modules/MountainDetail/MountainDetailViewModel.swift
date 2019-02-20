@@ -6,8 +6,9 @@
 //  Copyright © 2018 Gustavo Miyamoto. All rights reserved.
 //
 
-import RxSwift
 import AlamofireImage
+import Moya
+import RxSwift
 
 /**
  ViewModel class to bind mountain detail information.
@@ -31,7 +32,7 @@ final class MountainDetailViewModel {
         self.suggestions = Variable(suggestions)
         
         // Initialize interactor
-        let repository = YamapProvider.mountainDataSource
+        let repository = MountainDataSource(provider: MoyaProvider<MountainApi>())
         interactor = GetMountainImageInteractor(repository: repository)
         interactor.callback = self
     }

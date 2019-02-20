@@ -6,6 +6,7 @@
 //  Copyright © 2018 Gustavo Miyamoto. All rights reserved.
 //
 
+import Moya
 import RxSwift
 import RxCocoa
 
@@ -30,7 +31,7 @@ final class MountainListViewModel {
     
     // MARK: - Lifecycle
     init() {
-        let repository = YamapProvider.mountainDataSource
+        let repository = MountainDataSource(provider: MoyaProvider<MountainApi>())
         let interactor = GetMountainListInteractor(repository: repository)
         self.interactor = interactor
         

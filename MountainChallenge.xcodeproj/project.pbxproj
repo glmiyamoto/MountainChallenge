@@ -20,9 +20,12 @@
 		C43EE70021D6871900EBABA0 /* MountainDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43EE6FF21D6871900EBABA0 /* MountainDetailViewModel.swift */; };
 		C4593F7721D6A2E9007641DE /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4593F7621D6A2E9007641DE /* ColorExtensions.swift */; };
 		C4593F7921D6A4E0007641DE /* LikeStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4593F7821D6A4E0007641DE /* LikeStatus.swift */; };
+		C48F668A221DC617002ED538 /* MountainApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48F6689221DC617002ED538 /* MountainApi.swift */; };
+		C48F668E221DCA58002ED538 /* ResourceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48F668D221DCA58002ED538 /* ResourceHelper.swift */; };
+		C48F6690221DCBA7002ED538 /* ResourceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48F668F221DCBA7002ED538 /* ResourceError.swift */; };
+		C48F6692221DDD19002ED538 /* MountainDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48F6691221DDD19002ED538 /* MountainDataSource.swift */; };
+		C48F6694221DE5DE002ED538 /* BaseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48F6693221DE5DE002ED538 /* BaseDataSource.swift */; };
 		C4A842D721D4525B000C23E4 /* MountainRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A842D621D4525B000C23E4 /* MountainRepositoryTest.swift */; };
-		C4AC79E4221C286700A64016 /* ProviderProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AC79E3221C286700A64016 /* ProviderProtocols.swift */; };
-		C4AC79E9221C2F0600A64016 /* MountainUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AC79E8221C2F0600A64016 /* MountainUrl.swift */; };
 		C4AC79EB221C3FBD00A64016 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AC79EA221C3FBD00A64016 /* BaseViewController.swift */; };
 		C4AC79ED221C4FBA00A64016 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AC79EC221C4FBA00A64016 /* NavigationController.swift */; };
 		C4AD289921D4052A001A4455 /* MountainDetailViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD289821D4052A001A4455 /* MountainDetailViewModelProtocol.swift */; };
@@ -30,7 +33,6 @@
 		C4AD289E21D40862001A4455 /* Mountain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD289D21D40862001A4455 /* Mountain.swift */; };
 		C4AD28A121D40B46001A4455 /* MountainRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD28A021D40B46001A4455 /* MountainRepository.swift */; };
 		C4AD28A621D40E97001A4455 /* mountains.json in Resources */ = {isa = PBXBuildFile; fileRef = C4AD28A521D40E97001A4455 /* mountains.json */; };
-		C4AD28A821D41549001A4455 /* YamapProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD28A721D41549001A4455 /* YamapProvider.swift */; };
 		C4AD28A921D43A1A001A4455 /* mountains.json in Resources */ = {isa = PBXBuildFile; fileRef = C4AD28A521D40E97001A4455 /* mountains.json */; };
 		C4AD28AA21D43A1F001A4455 /* mountains.json in Resources */ = {isa = PBXBuildFile; fileRef = C4AD28A521D40E97001A4455 /* mountains.json */; };
 		C4AD28AE21D43D47001A4455 /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD28AD21D43D47001A4455 /* JsonHelper.swift */; };
@@ -86,9 +88,12 @@
 		C43EE6FF21D6871900EBABA0 /* MountainDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainDetailViewModel.swift; sourceTree = "<group>"; };
 		C4593F7621D6A2E9007641DE /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		C4593F7821D6A4E0007641DE /* LikeStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeStatus.swift; sourceTree = "<group>"; };
+		C48F6689221DC617002ED538 /* MountainApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainApi.swift; sourceTree = "<group>"; };
+		C48F668D221DCA58002ED538 /* ResourceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceHelper.swift; sourceTree = "<group>"; };
+		C48F668F221DCBA7002ED538 /* ResourceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceError.swift; sourceTree = "<group>"; };
+		C48F6691221DDD19002ED538 /* MountainDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainDataSource.swift; sourceTree = "<group>"; };
+		C48F6693221DE5DE002ED538 /* BaseDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDataSource.swift; sourceTree = "<group>"; };
 		C4A842D621D4525B000C23E4 /* MountainRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainRepositoryTest.swift; sourceTree = "<group>"; };
-		C4AC79E3221C286700A64016 /* ProviderProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderProtocols.swift; sourceTree = "<group>"; };
-		C4AC79E8221C2F0600A64016 /* MountainUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainUrl.swift; sourceTree = "<group>"; };
 		C4AC79EA221C3FBD00A64016 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		C4AC79EC221C4FBA00A64016 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		C4AD289821D4052A001A4455 /* MountainDetailViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainDetailViewModelProtocol.swift; sourceTree = "<group>"; };
@@ -96,7 +101,6 @@
 		C4AD289D21D40862001A4455 /* Mountain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mountain.swift; sourceTree = "<group>"; };
 		C4AD28A021D40B46001A4455 /* MountainRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainRepository.swift; sourceTree = "<group>"; };
 		C4AD28A521D40E97001A4455 /* mountains.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mountains.json; sourceTree = "<group>"; };
-		C4AD28A721D41549001A4455 /* YamapProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YamapProvider.swift; sourceTree = "<group>"; };
 		C4AD28AD21D43D47001A4455 /* JsonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonHelper.swift; sourceTree = "<group>"; };
 		C4B58CB521D4FE6E00139903 /* JsonDecodeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecodeError.swift; sourceTree = "<group>"; };
 		C4B58CB721D5015C00139903 /* ResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseError.swift; sourceTree = "<group>"; };
@@ -210,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				C4AC79E7221C2ED200A64016 /* Mountain */,
+				C48F6693221DE5DE002ED538 /* BaseDataSource.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -233,8 +238,9 @@
 		C4AC79E7221C2ED200A64016 /* Mountain */ = {
 			isa = PBXGroup;
 			children = (
+				C48F6689221DC617002ED538 /* MountainApi.swift */,
 				C4AD28A021D40B46001A4455 /* MountainRepository.swift */,
-				C4AC79E8221C2F0600A64016 /* MountainUrl.swift */,
+				C48F6691221DDD19002ED538 /* MountainDataSource.swift */,
 			);
 			path = Mountain;
 			sourceTree = "<group>";
@@ -311,7 +317,6 @@
 			isa = PBXGroup;
 			children = (
 				C450C29421D4E5CD008A1CDB /* Repository */,
-				C4AD28AB21D43D19001A4455 /* Provider */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -324,21 +329,13 @@
 			path = Json;
 			sourceTree = "<group>";
 		};
-		C4AD28AB21D43D19001A4455 /* Provider */ = {
-			isa = PBXGroup;
-			children = (
-				C4AC79E3221C286700A64016 /* ProviderProtocols.swift */,
-				C4AD28A721D41549001A4455 /* YamapProvider.swift */,
-			);
-			path = Provider;
-			sourceTree = "<group>";
-		};
 		C4AD28B121D442FA001A4455 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				C4AD28AD21D43D47001A4455 /* JsonHelper.swift */,
-				C43EE6F921D65FF900EBABA0 /* StringExtensions.swift */,
 				C4593F7621D6A2E9007641DE /* ColorExtensions.swift */,
+				C4AD28AD21D43D47001A4455 /* JsonHelper.swift */,
+				C48F668D221DCA58002ED538 /* ResourceHelper.swift */,
+				C43EE6F921D65FF900EBABA0 /* StringExtensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -355,6 +352,7 @@
 			isa = PBXGroup;
 			children = (
 				C4B58CB521D4FE6E00139903 /* JsonDecodeError.swift */,
+				C48F668F221DCBA7002ED538 /* ResourceError.swift */,
 				C4B58CB721D5015C00139903 /* ResponseError.swift */,
 			);
 			path = Error;
@@ -537,6 +535,8 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-MountainChallenge/Pods-MountainChallenge-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -547,6 +547,8 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -635,20 +637,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4AC79E9221C2F0600A64016 /* MountainUrl.swift in Sources */,
 				C4B58CBE21D52F0100139903 /* GetMountainListInteractorProtocol.swift in Sources */,
 				C4593F7721D6A2E9007641DE /* ColorExtensions.swift in Sources */,
+				C48F6694221DE5DE002ED538 /* BaseDataSource.swift in Sources */,
 				C4AD289921D4052A001A4455 /* MountainDetailViewModelProtocol.swift in Sources */,
 				C4B58CC721D548DC00139903 /* MountainTableViewCell.swift in Sources */,
 				C4AC79EB221C3FBD00A64016 /* BaseViewController.swift in Sources */,
 				C4AD28A121D40B46001A4455 /* MountainRepository.swift in Sources */,
 				C43569FF21D3FCB900A5CA8F /* ViewController.swift in Sources */,
 				C4AC79ED221C4FBA00A64016 /* NavigationController.swift in Sources */,
+				C48F6692221DDD19002ED538 /* MountainDataSource.swift in Sources */,
 				C4B58CC521D539D500139903 /* GetMountainImageInteractor.swift in Sources */,
+				C48F668A221DC617002ED538 /* MountainApi.swift in Sources */,
 				C43EE6FA21D65FF900EBABA0 /* StringExtensions.swift in Sources */,
 				C4AD289E21D40862001A4455 /* Mountain.swift in Sources */,
 				C4B58CC021D52FE000139903 /* GetMountainListInteractor.swift in Sources */,
-				C4AC79E4221C286700A64016 /* ProviderProtocols.swift in Sources */,
 				C4AD289B21D40794001A4455 /* MountainListViewModelProtocol.swift in Sources */,
 				C4B58CB821D5015C00139903 /* ResponseError.swift in Sources */,
 				C4B58CDF21D5AC1D00139903 /* MountainTableViewCellViewModel.swift in Sources */,
@@ -659,8 +662,9 @@
 				C4B58CC321D5396400139903 /* GetMountainImageInteractorProtocol.swift in Sources */,
 				C43EE6FE21D66CC600EBABA0 /* MountainTableViewCellViewModelProtocol.swift in Sources */,
 				C4B58CD821D59D2D00139903 /* MountainListViewModel.swift in Sources */,
+				C48F668E221DCA58002ED538 /* ResourceHelper.swift in Sources */,
 				C43EE70021D6871900EBABA0 /* MountainDetailViewModel.swift in Sources */,
-				C4AD28A821D41549001A4455 /* YamapProvider.swift in Sources */,
+				C48F6690221DCBA7002ED538 /* ResourceError.swift in Sources */,
 				C4B58CCB21D579B200139903 /* MountainDetailViewController.swift in Sources */,
 				C4AD28AE21D43D47001A4455 /* JsonHelper.swift in Sources */,
 			);

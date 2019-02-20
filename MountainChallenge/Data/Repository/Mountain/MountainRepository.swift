@@ -13,15 +13,3 @@ protocol MountainRepository {
     func getMountains() -> Single<[Mountain]>
     func getMountainImage(url: String) -> Single<Image>
 }
-
-// MARK: - Extension - Mountain Repository
-extension YamapProvider: MountainRepository {
-    // MARK: Protocol implementation
-    func getMountains() -> Single<[Mountain]> {
-        return get(MountainUrl.mountains)
-    }
-    
-    func getMountainImage(url: String) -> Single<Image> {
-        return image(url)
-    }
-}
